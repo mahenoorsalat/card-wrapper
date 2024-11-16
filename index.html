@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Slider with Swiper</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/course1.jpg" class="card-image" alt="">
+                <p class="badge">Developer</p>
+                <h2 class="card-title">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h2>
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/course2.jpg" class="card-image" alt="">
+                <p class="badge">Designer</p>
+                <h2 class="card-title">
+                    Adipisci rem culpa blanditiis illum nulla.
+                </h2>
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/course3.jpg" class="card-image" alt="">
+                <p class="badge">SEO Expert</p>
+                <h2 class="card-title">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h2>
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/course4.jpg" class="card-image" alt="">
+                <p class="badge">Contractor</p>
+                <h2 class="card-title">
+                    Adipisci rem culpa blanditiis illum nulla.
+                </h2>
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/course5.jpg" class="card-image" alt="">
+                <p class="badge">Enterpreneur</p>
+                <h2 class="card-title">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h2>
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/course6.jpg" class="card-image" alt="">
+                <p class="badge">B2B</p>
+                <h2 class="card-title">
+                    Adipisci rem culpa blanditiis illum nulla.
+                </h2>
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>          
+            <!-- Add more slides as needed -->
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
